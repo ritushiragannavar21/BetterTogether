@@ -111,6 +111,7 @@ form button:hover{
     font-weight: 500;
     font-size: 16px;
 }
+
 form button{
     color: #FFFFFF;
     text-decoration: none;
@@ -184,8 +185,13 @@ form button{
         margin-top: 40px;
     }
     .one h2 , .three h4{
-        margin-top: 10px;
         font-size: 30px;
+    }
+    .one h2{
+        margin-top: 10px !important;
+    }
+    .three h4{
+        margin-top: 0px;
     }
     .two{
         margin-top: 21px;

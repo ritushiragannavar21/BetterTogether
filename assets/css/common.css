@@ -147,7 +147,7 @@ svg.menu{
     border-top: 1px solid #E8735C;
 }
 .footr{
-    padding: 99px 0 57px;
+    padding: 99px 0 37px;
     display: grid;
     grid-template-columns:2.14fr 1fr 1fr 2fr;
 }
@@ -159,7 +159,7 @@ svg.menu{
 .column-1 img{
     width: 205px;
     height: 28.18px;
-    padding-bottom: 41.08px;
+    padding-bottom: 24.08px;
 }
 .column-1 span{
     padding-bottom: 20px;
@@ -222,7 +222,7 @@ svg.menu{
     line-height: 30px;
 }
 
-/* --------------------last sec---------------------- */
+/* --------------------last sec ---footer below text---------------------- */
 
 .last-sec{
     border-top: 1px solid #8E8E8E;
@@ -287,7 +287,7 @@ svg.menu{
         grid-column:1/2 ;
     }
     .footr .column-3{
-        grid-column: 2/4;
+        grid-column: 2/5;
     }
     .footr .column-4{
         grid-column: 1/4;
@@ -301,9 +301,11 @@ svg.menu{
     .inline-last{
         flex-direction: column;
         padding-bottom: 20px;
+        padding-top: 30px;
     }
     .footr{
         padding-top: 61px;
+        padding-bottom: 60px;
     }
     .inline-txt1{
         font-weight: 500;
@@ -313,5 +315,8 @@ svg.menu{
     }
     .lastsec-txt1 , .lastsec-txt2{
         margin-bottom: 20px;
+    }
+    .footer-phone, .footer-gmail{
+        font-size: 16px;
     }
 }
