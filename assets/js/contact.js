@@ -1,8 +1,8 @@
 
 
-    // let buttonwork=document.getElementsByClassName('send-msg');
+    // let button=document.getElementsByClassName('send');
 
-    // buttonwork.addEventListener('click', function() {
+    // button.addEventListener('click', function() {
     //     // let msg=document.getElementById('Thankyou_message')[0];
     //     // msg.style.display='block';
     //    alert('Thankyou');
