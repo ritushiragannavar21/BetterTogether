@@ -38,28 +38,30 @@
     font-size: 30px;
     line-height: 40px;
     color: #E85F5C;
+    margin-top: 3px;
 }
 .one{
     margin-top: 84px;
-}
-.one h2, .three h4{
-    margin-top: 3px;
-}
+}   
 .two{
     margin-top: 132px;
+   
+}
+.two a{
+    color: #7692FF;
     font-size: 16px;
     font-family: 'Hind';
     line-height: 30px;
     font-weight: 500;
-}
-.two a{
-    color: #7692FF;
 }
 .three {
     margin-top: 57px;;
 }
 .four{
     margin-top: 62px;
+}
+.two , .four{
+    padding-left: 40px;
 }
 .txt-box1{
     font-weight: 500;
@@ -69,7 +71,7 @@
 .user-box {
     position: relative;
 } 
-.user-box input {
+.user-box input ,textarea{
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -98,7 +100,14 @@
     color: #000000;
     font-size: 12px;
 }
-form button:hover{
+.user-box textarea:focus ~ label,
+.user-box textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+}
+form .send:hover{
     background: #7692FF;
     text-decoration: underline;
     cursor: pointer;
@@ -111,8 +120,7 @@ form button:hover{
     font-weight: 500;
     font-size: 16px;
 }
-
-form button{
+form .send{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 14px;
@@ -121,6 +129,9 @@ form button{
     width: 126px;
     height: 50px;
     margin-top: 13px;
+}
+.Thankyou_message{
+    display: none;
 }
 /* ----------------txt above footer----------------- */
 .container1{
@@ -186,6 +197,9 @@ form button{
     }
     .one h2 , .three h4{
         font-size: 30px;
+    }
+    .two , .four{
+        padding-left: 0px;
     }
     .one h2{
         margin-top: 10px !important;

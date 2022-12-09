@@ -74,6 +74,9 @@ body{
     text-decoration: none;
     color: #E85F5C;
 }
+.inline .a:hover{
+    text-decoration: underline;
+}
 .info{
     margin-right: 185px;
 }
@@ -84,7 +87,7 @@ body{
 }
 .gmail:hover, .phone:hover{
     text-decoration: underline;
-    font-weight: 800;
+    
 }
 
 /* ----------------navbar section css------------- */
@@ -112,7 +115,6 @@ svg.menu{
 .flex li:hover{
     text-decoration: underline;
     cursor: pointer;
-    font-weight: 800;
 }
 .dropdown:hover .dropdown-options{
     display: block;
@@ -185,14 +187,24 @@ svg.menu{
    border-bottom: 1px solid black  ;
     background: #F5F8F3;
 }
-.subscribe{
+form .subscribe{
     font-weight: 800;
     font-size: 12px;
+    border: none;
+    text-decoration: underline;
 }
-.subscribe:hover{
-    border-bottom: none;
+form .subscribe:hover{
+    text-decoration: none;
     cursor: pointer;
 }
+form .yourmailinput{    
+    width: 60%;
+    background: #F5F8F3;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+}
+
 .email-footer{
     width: 60%;
 }

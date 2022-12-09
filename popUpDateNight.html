@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/common.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/popDateNight.min.css">
 
     <title>Popup dateNight</title>
@@ -53,8 +53,8 @@
                         </div>
                     </div></li>
                     <li class="li1"><a class="nav-item" href="">Learn</a></li>
-                    <li><img class="logo hide-mobile" src="./assets/images/PopUpDateNightImg/better.together.stacked.logo.NV 2.svg" alt="Logo">
-                    <img class="logo show-mobile" src="./assets/images/BetterTogetherHomePageImg/betterTogetherLogo.svg" alt="Logo"></li>
+                    <li><img class="logo hide-mobile" src="./assets/images/PopUpDateNightImg/better.together.stacked.logo.NV 2.svg" alt="Logo" onclick="home()">
+                    <img class="logo show-mobile" src="./assets/images/BetterTogetherHomePageImg/betterTogetherLogo.svg" alt="Logo" onclick="home()"></li>
                     <li class="li1"><a class="nav-item" href="">Register</a> </li>
                     <li class="li1"><a class="nav-item" href="contact.html">Contact</a></li>
                 </ul>
@@ -212,8 +212,12 @@
                 <div class="column-4">
                     <h3>Be In The Know</h3>
                     <p>Promotions, new events & sales. Directly to your inbox.</p>
-                    <p class=" email justify-between"><span class="email-footer">Your Email</span><span class="subscribe">SUBSCRIBE</span></p>
-
+                    <!-- <p class=" email justify-between"><span class="email-footer">Your Email</span><span class="subscribe">SUBSCRIBE</span></p> -->
+                    <form action="" >
+                        <input class="yourmailinput" type="email" placeholder="your Email">
+                        <button class="subscribe">SUBSCRIBE</button>
+                    </form>
+                    
                     <div class="media-icon">
                         <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.55 7.56V14.82C1.55 14.91 1.64 15 1.73 15H4.43C4.52 15 4.61 14.91 4.61 14.82V7.44H6.56C6.65 7.44 6.74 7.35 6.74 7.26L6.92001 5.04C6.92001 4.92 6.83 4.83 6.74 4.83H4.61V3.24C4.61 2.88 4.91 2.58 5.27 2.58H6.77001C6.86 2.58 6.95 2.49 6.95 2.4V0.18C6.98 0.09 6.89 0 6.8 0H4.25C2.75 0 1.55 1.2 1.55 2.7V4.83H0.200004C0.110004 4.83 0.0200043 4.92 0.0200043 5.01V7.23C0.0200043 7.32 0.110004 7.41 0.200004 7.41H1.55V7.56Z" fill="#E85F5C"/>
@@ -245,6 +249,7 @@
     </section>
       
     <!-- --------------footer below last line end------------------ -->
-
+   
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
