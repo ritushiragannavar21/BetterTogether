@@ -1,6 +1,6 @@
 
 
-    let buttonEl = document.getElementById('submit_button').required;
+    let buttonEl = document.getElementById('submit_button');
 
     buttonEl.addEventListener('click', function() {
         let msg=document.getElementsByClassName('Thankyou_message')[0];
