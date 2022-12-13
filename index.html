@@ -284,9 +284,9 @@
                     <h3>Be In The Know</h3>
                     <p>Promotions, new events & sales. Directly to your inbox.</p>
                     <!-- <p class=" email justify-between"><span class="email-footer">Your Email</span><span class="subscribe">SUBSCRIBE</span></p> -->
-                    <form action="" >
-                        <input class="yourmailinput" type="email" placeholder="your Email">
-                        <button class="subscribe">SUBSCRIBE</button>
+                    <form name="subscribe_form" action="" >
+                        <input class="yourmailinput" type="email" placeholder="your Email" name="form2" required />
+                        <button type="button" class="subscribe" name="email2" onclick="subscribe()">SUBSCRIBE</button>
                     </form>
                     <div class="media-icon">
                         <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -321,5 +321,6 @@
     <!-- --------------footer below last line end------------------ -->
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/subscribe.js"></script>
 </body>
 </html>
