@@ -1,0 +1,226 @@
+.BgWhite{
+    background: white !important;
+}
+
+/* ----------better together events text with background color ------------*/
+
+.contact-txt{
+    background: #E85F5C;
+    height: 150px;
+}
+.contact-txt h1{
+    color: #F6F8F3;
+    font-size: 40px;
+}
+.sec2{
+    margin: 32px auto 33px;
+}
+
+.contact-txt h1 , .textabovefooter p{
+    font-weight: 800;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* ---------------Choose Your Experience text--------------- */
+ 
+.choose-experience-txt{
+    color: #E85F5C;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 89px;
+    line-height: 38px;
+    padding-bottom: 9px;
+}
+
+/* ---------------------filter button with dropdown option-------------- */
+.flex-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#checkboxes{
+    display: none;
+    position: absolute;
+    border: 1px solid #8E8E8E;
+    background: #FFFFFF;
+    width: 31%;
+}
+#checkboxes label{
+    display: block; 
+    padding: 10px 0px 13px 5px;
+    font-size: 14px;
+    font-weight: 500;   
+}
+.select-option{
+    display: flex;
+}
+.select-option select{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #8E8E8E;
+    padding-left: 14px;
+}
+.select-2{
+    display: none;
+}
+.select-option p{
+    font-weight: 600;
+    font-size: 12px; 
+    margin-right: 8px;
+}
+.filter{
+    background: #7692FF;
+    height: 41px;
+    width: 181px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: relative;
+}
+.filter-div svg{
+    display: none;
+   
+}
+.count-down-div{
+    width: 93%;
+    border-bottom: 1px solid #8E8E8E;
+    padding: 11px;
+    text-align: center;
+}
+#checkboxes span{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* -- --------------6 image part choose your experience------------- --> */
+
+.grid-containers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;  
+    padding-top: 20px;
+}
+.grid img{
+    width: 100%;
+}
+.grid{
+    width: 100%;
+    margin-bottom: 72px;
+}
+.grid-text{
+    font-weight: 800;
+    margin-top: 28px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+.dollar{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600 ;
+    margin-top: 11px;
+}
+.Newyork{
+    display: none;
+}
+/* --------------learn why we do text above the footer----------- */
+
+.container1{
+    max-width: 1196px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+.textabovefooter{
+    margin-top: 48px;
+    background: #E85F5C;
+    height: 200px;
+    margin-bottom: 47px;
+}
+.textabovefooter p{
+    font-size: 30px;
+    line-height: 40px;
+    color: #F5F8F3;
+}
+.textabovefooter span{
+    border-bottom: 1px solid #F5F8F3;
+}
+.textabovefooter span:hover{
+    border-bottom: none;
+}
+
+/* --------------media query---------------- */
+
+@media only screen and (max-width:768px){
+    .grid-containers{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .contact-txt h1{
+        font-size: 35px;
+    }
+    .contact-txt{
+        height: 125px;
+    }
+    .choose-experience-txt{
+        padding-top: 55px;
+    }
+}
+
+@media only screen and (max-width:520px){
+    .contact-txt h1{
+        font-size: 30px !important;
+        padding: 0px;
+    }
+    .sec2{
+        margin: 20px auto;
+    }
+    .contact-txt{
+        height: 119px;
+    }
+    .choose-experience-txt{
+        padding-top: 40px;
+        padding-bottom: 24px;
+        text-align: left;
+    }
+    .grid-containers{
+        column-gap: 11.83px;
+        padding-top: 43px;
+    }
+    .filter-div svg{
+        display: block;
+    }
+    .filter{
+        display: none;
+    }
+    .grid-text{
+        margin-top: 10.55px;
+    }
+    .grid{
+        margin-bottom: 20.32px;
+    }
+    .textabovefooter{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .select-2{
+        display: block;
+    }
+    .select-1{
+        display: none;
+    }
+    .select-2 select{
+        -webkit-appearance: none;
+    }
+    .container1{
+        padding: 0px;
+    }
+    .BgWhite1{
+        background:white ;
+    }
+}

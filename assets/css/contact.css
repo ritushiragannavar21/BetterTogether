@@ -12,10 +12,8 @@
 .sec2{
     margin: 32px auto 31px;
 }
-.show-mobile{
-    display: none;
-}
-/* -----------contact-- phone number and email par */
+
+/* -----------contact-- phone number and email par ----------------*/
 
 .grid-container{
     display: grid;
@@ -186,12 +184,6 @@ form .send{
 @media only screen and (max-width : 520px){
     .one,.two ,.three, .four{
         grid-column: 1/5;
-    }
-    .show-mobile{
-        display: block;
-    }
-    .hide-desktop{
-        display: none;
     }
     .one{
         margin-top: 40px;

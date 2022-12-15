@@ -104,6 +104,9 @@ body{
 .flex li:last-child{
     margin-right: 0px;
 }
+.show-mobile{
+    display: none;
+}
 .logo{
     height: 70px;
     width: 183.44px;  
@@ -184,17 +187,17 @@ svg.menu{
 }
 .email-footer , .subscribe{
     border-style: none;
-   border-bottom: 1px solid black  ;
+   border-bottom: 1px solid #000000  ;
     background: #F5F8F3;
 }
 form .subscribe{
     font-weight: 800;
     font-size: 12px;
     border: none;
-    text-decoration: underline;
+    border-bottom: 1px solid #000000;
 }
 form .subscribe:hover{
-    text-decoration: none;
+    border-bottom: none;
     cursor: pointer;
 }
 form .yourmailinput{    
@@ -294,6 +297,12 @@ form .yourmailinput{
         margin-left: 10%;
         height:40.99px ;
         width: 109px;
+    }
+    .show-mobile{
+        display: block;
+    }
+    .hide-desktop{
+        display: none;
     }
     .footr .column-1 ,.footr .column-2 {
         grid-column:1/2 ;

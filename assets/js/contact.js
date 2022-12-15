@@ -3,8 +3,8 @@
     let buttonEl = document.getElementById('submit_button');
 
     buttonEl.addEventListener('click ', function() {
-        let msg=document.getElementsByClassName('Thankyou_message')[0];
-        msg.style.display='block';
+        let list=document.getElementsByClassName('Thankyou_message')[0];
+        list.style.display='block';
     //    alert('Thankyou');
         
     });

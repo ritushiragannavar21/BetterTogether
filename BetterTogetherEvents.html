@@ -9,13 +9,43 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <link rel="stylesheet" href="./assets/css/common.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    <title>Contact</title>
- 
+    <link rel="stylesheet" href="./assets/css/BetterTogetherEvents.css">
+    <title>Document</title>
 
+    <script>
+        var expanded=false;
+        function showList(){
+
+            var list=document.getElementById('checkboxes');
+            if(!expanded){
+                list.style.display="block";
+                expanded=true;
+            }
+            else{
+                list.style.display="none";
+                expanded=false;
+            }
+          
+        }
+
+        function checkedFunction(){
+        var checkedInputs = document.querySelectorAll("input:checked");
+         var doc=document.getElementsByClassName('check-number')[0];
+         doc.innerText=checkedInputs.length
+        }
+
+        // function newyorkImg(){
+        //     var showpic= document.getElementById('one');
+        //     showpic.addEventListener('click ', function() {
+        // let checklist=document.getElementsByClassName('newyork1')[0];
+        // checklist.style.display='block';
+
+        // });
+    }
+    </script>
 </head>
 <body>
-
+    
 
     <!-- ------------mini header with mail n signin ---------->
     <section class="sec1">
@@ -34,7 +64,7 @@
      <!-- ------------mini header with mail n signin End ---------->
 
     <!-- --------------------navbar section------------- -->
-    <section class="sec2">
+    <section class="sec2 ">
         <div class=" container">
             <nav class="navbar justify-between center-property">    
                 
@@ -88,75 +118,142 @@
     </section>
     <!-- ------------------navbar section End------------- -->
 
-    <!-- ------------contact text with background color start------- -->
+    <!-- ------------better together event text with background color start------- -->
 
-    <section>
+    <section  >
         <div class="contact-txt center-property justify-center">
-            <h1>Contact</h1>
+            <h1>Better Together Events</h1>
         </div>
     </section>
 
-    <!-- ------------contact text with background color end------- -->
+    <!-- ------------better together event text with background color end------- -->
 
-    <!-- -----------phone no & email txt start----------- -->
-
-    <section>
+    <!-- -----------------Choose Your Experience text--------------- -->
+    <section class="BgWhite">
         <div class="container">
-            <div class="grid-container">
-                <div class="one">
-                    <p class="txt1">Phone number and email</p>
-                    <h2 class="txt2">How to reach us.</h2>   
-                </div>
+            <h2 class="choose-experience-txt">Choose Your Experience</h2>
+        </div>
+    </section>
 
-                <div class="two">
-                    <a class="phone footer-phone"href="tel:(317)846-2884"> (317)846-2884</a> <br>
-                    <a class="gmail footer-gmail" href="mailto:shiragannavaritu@gmail.com">Info@bettertogether.us</a>
-                </div>
+    <!-- -----------------end Choose Your Experience text--------------- -->
 
-                <div class="three">
-                    <p class="txt3">We’re here to help</p>
-                    <h4 class="txt4">Stay in Touch!</h4>
-                </div>
+    <!-- -------------filter buuton with dropdown----------- -->
+    <section class="BgWhite">
+        <div class="container">
+            <div class="flex-container">
+                
+                <div class="filter-div">
+                    <form action="">
+                    <button class="filter" type="button" onclick="showList();">Filters</button>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="showList()">
+                        <path d="M8.11979 18.875V13.0156H9.68229V15.1771H18.875V16.7396H9.68229V18.875H8.11979ZM0.125 16.7396V15.1771H6.55729V16.7396H0.125ZM4.99479 12.4167V10.2812H0.125V8.71875H4.99479V6.53125H6.55729V12.4167H4.99479ZM8.11979 10.2812V8.71875H18.875V10.2812H8.11979ZM12.4427 5.98438V0.125H14.0052V2.26042H18.875V3.82292H14.0052V5.98438H12.4427ZM0.125 3.82292V2.26042H10.8802V3.82292H0.125Z" fill="black"/>
+                    </svg>
 
-                <div class="four">
-                    
-                    <form name="form1" action="contact.html" > 
-                        <div class="user-box ">
-                            <input type="text" name="txt" required>
-                            <label>Name</label>
+                    <div id="checkboxes" onclick="checkedFunction()"  >
+
+                        <div class="count-down-div">
+                        <span class="check-number" style="margin-right: 5px;"></span><span class="count-down">City Selected</span></div>
+
+                        <label for="one" class="item">
+                          <input type="checkbox" id="one" onclick="newyorkImg" class="check" />Newyork</label>
+                        <label for="two" class="item">
+                          <input type="checkbox" id="two" class="check" />California</label>
+                        <label for="three" class="item">
+                          <input type="checkbox" id="three" class="check" />Florida</label>
+                        <label for="four" class="item">
+                          <input type="checkbox" id="three" class="check" />Miami</label>
                         </div>
-                        <div class="user-box ">
-                            <input type="email" name="txt" required="" />
-                            <label>Email</label>
-                        </div>
-                        <div class="user-box ">
-                            <input type="number" name="txt" maxlength="10" required="" />
-                            <label>Phone Number</label>
-                        </div>
-                        <div class="user-box ">
-                            <input type="text" name="txt" value=""  onfocus="(this.type='date')"  onblur="(this.type='text')"  required="" />
-                            <label>Anniversary Date</label>
-                        </div>
-                        <div class="user-box ">
-                            <textarea class="msg-area" type="textarea" name="txt" required=""></textarea>
-                            <label>Message</label>
-                        </div>
-                        <div class="send-btn ">
-                            <button  class="send" id="submit_button" type="button"  value="submit">Send</button>
-                           <!-- <p class="Thankyou_message">Thank You for Submitting!</p> -->
-                        </div>   
                     </form>
-                </div>                
+                   
+                </div>
+            
+                    <div class="select-option select-1" style="float: right;">
+                        <p>Sort by</p>
+                        <select>
+                            <option value="">Featured</option>
+                            <option value="">Best selling</option>
+                            <option value="">Alphabetically,A-Z</option>
+                            <option value="">Alphabetically,Z-A</option>
+                            <option value="">Price,low to high</option>
+                            <option value="">Price,high to low</option>
+                        </select>
+                    </div>
+                    <div class="select-option select-2" >
+                       
+                        <select>
+                            <option value="">Sort by</option>
+                            <option value="">Featured</option>
+                            <option value="">Best selling</option>
+                            <option value="">Alphabetically,A-Z</option>
+                            <option value="">Alphabetically,Z-A</option>
+                            <option value="">Price,low to high</option>
+                            <option value="">Price,high to low</option>
+                        </select>
+                    </div>
             </div>
         </div>
     </section>
 
+    <!-- -------------End filter buuton with dropdown----------- -->
+
+<!-- --------------6 image part choose your experience------------- -->
+
+<section class="BgWhite">
+    <div class="container">
+        <div class="grid-containers">
+            <div class="grid "> 
+                <img src="./assets/images/BetterTogetherEvents/TimHawkins.jpg" alt="TimHawkins img">
+                <p class="grid-text">Tim Hawkins: Date Night</p>
+                <p class="dollar">$50.00</p>
+            </div>
+            <div class="grid "> 
+                <img src="./assets/images/BetterTogetherEvents/coupleYoga.jpg" alt="coupleYoga img">
+                <p class="grid-text">Couples Yoga: Date Night</p>
+                <p class="dollar">$25.00</p>
+            </div>
+            <div class="grid "> 
+                <img src="./assets/images/BetterTogetherEvents/balloonRide.jpg" alt="balloonRide img">
+                <p class="grid-text">Balloon Ride: Grace Marriage Getaway</p>
+                <p class="dollar">$250.00</p>
+            </div>
+            <div class="grid "> 
+                <img src="./assets/images/BetterTogetherEvents/cookingTogether.jpg" alt="cookingTogether img">
+                <p class="grid-text">Cooking Together: Date Night</p>
+                <p class="dollar">$25.00</p>
+            </div>
+            <div class="grid "> 
+                <img src="./assets/images/BetterTogetherEvents/eagleCreekKayaking.jpg" alt="eagleCreekKayaking img">
+                <p class="grid-text">Eagle Creek Kayaking: Grace Marraige Getaway</p>
+                <p class="dollar">$100.00</p>
+            </div>
+            <div class="grid"> 
+                <img src="./assets/images/BetterTogetherEvents/uglyChristmaSweater.jpg" alt="uglyChristmaSweater img">
+                <p class="grid-text">Ugly Christmas Sweaters: Date Night</p>
+                <p class="dollar">$50.00</p>
+            </div>
+
+            <div class="grid Newyork"> 
+                <img src="./assets/images/BetterTogetherEvents/balloonRide.jpg" alt="balloonRide img" id="newyork1" >
+                <p class="grid-text">Balloon Ride: Grace Marriage Getaway</p>
+                <p class="dollar">$250.00</p>
+            </div>
+            <div class="grid Newyork"> 
+                <img src="./assets/images/BetterTogetherEvents/balloonRide.jpg" alt="balloonRide img" id="newyork2" >
+                <p class="grid-text">Balloon Ride: Grace Marriage Getaway</p>
+                <p class="dollar">$250.00</p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<!-- -------------- end 6 image part choose your experience------------- -->
+
 <!-- ---------------footer above text start----------------- -->
 
-<section>
+<section class=" ftr-above-txt">
     <div class="container1">
-        <div class="textaboveFooter center-property justify-center">
-            <p>Explore new experiences together, <span> register today!</span></p>
+        <div class="textabovefooter center-property justify-center">
+            <p>Learn why we do what we do, read more <span> about us.</span></p>
         </div>
     </div>
 </section>
@@ -165,7 +262,7 @@
 
      <!-- -------------------FOOTER--------------------------- -->
     
-     <footer class="ftr-main">
+     <footer class=" ftr-main">
         <div class="container">
             <div class="footr">
                 <div class="column-1">
@@ -174,8 +271,6 @@
                     <a class="phone footer-phone"href="tel:(317)846-2884"> (317)846-2884</a> <br>
                     <a class="gmail footer-gmail" href="mailto:shiragannavaritu@gmail.com">Info@bettertogether.us</a>
                     </div>
-
-
                 </div>
 
                 <div class="column-2">
@@ -238,5 +333,9 @@
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/contact.js"></script>
     <script src="./assets/js/subscribe.js"></script>
+    
 </body>
 </html>
+
+
+
