@@ -25,7 +25,7 @@ ol, ul {
 }
 @font-face {
     font-family: Mont-SemiBold;
-    src: url(/assets/Mont-SemiBold.woff2);
+    src: url(/assets/fonts/Mont-SemiBold.woff2);
 }
 body{   
     box-sizing: border-box;
