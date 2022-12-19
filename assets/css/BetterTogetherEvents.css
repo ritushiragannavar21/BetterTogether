@@ -101,7 +101,7 @@
 .grid-containers{
     display: grid;
     grid-template-columns: repeat(3,1fr); 
-    align-items: center;
+    
     justify-content: space-between;
     column-gap: 40px;  
     padding-top: 20px;
@@ -214,6 +214,7 @@
     }
     .select-2{
         display: block;
+        background: white;
     }
     .select-1{
         display: none;

@@ -201,7 +201,7 @@ form .subscribe:hover{
     cursor: pointer;
 }
 form .yourmailinput{    
-    width: 60%;
+    width: 73%;
     background: #F5F8F3;
     border: none;
     outline: none;
@@ -279,6 +279,9 @@ form .yourmailinput{
     .footr .column-1 , .footr .column-3{
         grid-column:1/2 ;
     }
+    form .yourmailinput{    
+        width: 60%;
+    }
     .footr .column-2 , .footr .column-4{
         grid-column: 3/5;
     }
@@ -311,7 +314,7 @@ form .yourmailinput{
         grid-column: 2/5;
     }
     .footr .column-4{
-        grid-column: 1/4;
+        grid-column: 1/6;
     }  
     .column-2 h3, .column-3 h3{
         margin-top: 46px;
