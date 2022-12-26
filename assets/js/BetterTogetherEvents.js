@@ -1,10 +1,10 @@
  
-//  window.addEventListener('mouseup',function(event){
-//     var box=document.getElementById('checkboxes');
-//     if(event.target !=box && event.target.parentNode !=box){
-//         box.style.display="none";
-//     }
-// });
+ window.addEventListener('mouseup',function(event){
+    var box=document.getElementById('checkboxes');
+    if(event.target !=box && event.target.parentNode !=box){
+        box.style.display="none";
+    }
+});
 
 var expanded=false;
     function showList(){
