@@ -57,7 +57,7 @@
     color: #000000;
 }
 .hind-font{
-    font-family: 'Hind';
+    font-family: var(--font-hind);
     font-weight: 500;
     font-size: 16px; 
     line-height: 34px
@@ -187,9 +187,9 @@
     color: #7692FF;
 }
 .four-option-txt2{
-    font-family: 'Hind';
+    font-family: var(--font-hind);
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--font-500);
     font-size: 15px;
     line-height: 34px;
     text-align: center;

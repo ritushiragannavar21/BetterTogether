@@ -104,20 +104,28 @@
             <div class="flex-box ">
                 <!-- img part -->
                 <div class="imag-part">
-                    <img src="./assets/images/productPage/productPageImg1.jpg" id="productImg" alt="T-shirt Img">
-
+                    
+                        <div class="produt-image">
+                            <img src="./assets/images/productPage/productPageImg1.jpg" id="productImg" alt="T-shirt Img">
+                            <img src="./assets/images/productPage/productPageImg2.svg" id="productImg1" alt="T-shirt Img" >
+                            <img src="./assets/images/productPage/productPageImg3.svg" id="productImg2" alt="T-shirt Img">
+                            <img src="./assets/images/productPage/productPageImg4.svg" id="productImg3" alt="T-shirt Img">
+                            <img src="./assets/images/productPage/productPageImg5.svg" id="productImg4" alt="T-shirt Img">
+                        </div>  
+                                  
+                
                     <div class="small-img-group">
                         <div class="smalImg">
-                            <img src="./assets/images/productPage/productPageImg2.jpg" class="smal-img" alt="">
+                            <img src="./assets/images/productPage/productPageImg2.svg" onclick="work()" class="smal-img"  alt="T-shirt Img">       
                         </div>
                         <div class="smalImg">
-                            <img src="./assets/images/productPage/productPageImg3.jpg" class="smal-img" alt="">
+                            <img src="./assets/images/productPage/productPageImg3.svg" onclick="work()" class="smal-img" alt="T-shirt Img">
                         </div>
                         <div class="smalImg">
-                            <img src="./assets/images/productPage/productPageImg4.jpg" class="smal-img" alt="">
+                            <img src="./assets/images/productPage/productPageImg4.svg" onclick="work()" class="smal-img" alt="T-shirt Img">
                         </div>
                         <div class="smalImg">
-                            <img src="./assets/images/productPage/productPageImg5.jpg" class="smal-img" alt="">
+                            <img src="./assets/images/productPage/productPageImg5.svg" onclick="work()" class="smal-img"  alt="T-shirt Img">
                         </div>
                     </div>
                 </div>
@@ -203,7 +211,7 @@
         <div class="container">
             <div class="sub-container">
                 <div class="texts">
-                    <button class="tablinks" onclick="openCity(event, 'London' )" >Description</button>
+                    <button class="tablinks active" onclick="openCity(event, 'London' )" >Description</button>
                     <button class="tablinks " onclick="openCity(event, 'Paris')">Review (10)</button>
                 </div>
                 <div id="London" class="paraText" >
@@ -212,7 +220,7 @@
                     Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
                 </div>
                 <div id="Paris" class="paraText" style="display: none;">
-                    <p class="para center-property"> Some reviews are as follows</p>
+                    <p class="para center-property"> No review available</p>
                 </div>
                 
             </div> 
@@ -220,7 +228,7 @@
     </section>
 
     <!-- -----------------description review paragraph part End------------------ -->
-     <!-- -------------------FOOTER--------------------------- -->
+     <!-- -------------------FOOTER section --------------------------- -->
     
      <footer class=" ftr-main">
         <div class="container">

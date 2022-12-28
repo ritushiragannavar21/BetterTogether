@@ -1,20 +1,27 @@
+
+// function change(img){
+//     var x=document.getElementById('productImg');
+//     x=img.src;
+// }
+
 // imagr replacement code
 
-// var productImg=document.getElementsById("productImg");
-// var smalimg=document.getElementsByClassName("smal-img");
+var productImg=document.getElementById("productImg");
+var smalimg=document.getElementsByClassName("smal-img");
+smalimg[0].onclick=function(){   
+    productImg.src=productImg1.src;
+}
+smalimg[1].onclick=function(){    
+    productImg.src=productImg2.src;
+}
+smalimg[2].onclick=function(){
+    productImg.src=productImg3.src;
+}
+smalimg[3].onclick=function(){  
+    productImg.src=productImg4.src;
+}
 
-// smalimg[0].onclick=function(){
-//     productImg.src=smalimg[0].src;
-// }
-// smalimg[1].onclick=function(){
-//     productImg.src=smalimg[1].src;
-// }
-// SmallImage[2].onclick=function(){
-//     productImg.src=smalimg[2].src;
-// }
-// smalimg[3].onclick=function(){
-//     productImg.src=smalimg[3].src;
-// }
+
 
 // description and review paragraph
 
@@ -22,8 +29,7 @@ function openCity(evt, cityName) {
     var i, paraText, tablinks;
     paraText = document.getElementsByClassName("paraText");
     for (i = 0; i < paraText.length; i++) {
-        paraText[i].style.display = "none";
-        
+        paraText[i].style.display = "none"; 
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {

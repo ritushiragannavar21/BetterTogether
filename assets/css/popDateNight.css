@@ -53,8 +53,8 @@
     margin-bottom: 17px ;
 }
 .two-section-txt p{
-    font-family: 'Hind';
-    font-weight: 500;
+    font-family: var(--font-hind);
+    font-weight: var(--font-500);
     font-size: 16px;
     color: #000000;
     line-height: 34px;
@@ -119,9 +119,9 @@
     margin-bottom: 11px;
 }
 .three-option-txt2{
-    font-family: 'Hind';
+    font-family: var(--font-hind);
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--font-500);
     font-size: 16px;
     line-height: 34px;
 }

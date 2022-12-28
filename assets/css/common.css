@@ -23,6 +23,11 @@ body {
 ol, ul {
 	list-style: none;
 }
+:root{
+    --font-hind: 'Hind';
+    --font-800:800;
+    --font-500:500;
+}
 @font-face {
     font-family: Mont-SemiBold;
     src: url(/assets/fonts/Mont-SemiBold.woff2);
@@ -191,7 +196,7 @@ svg.menu{
     background: #F5F8F3;
 }
 form .subscribe{
-    font-weight: 800;
+    font-weight: var(--font-800);
     font-size: 12px;
     border: none;
     border-bottom: 1px solid #000000;
@@ -332,7 +337,7 @@ form .yourmailinput{
         padding-bottom: 60px;
     }
     .inline-txt1{
-        font-weight: 500;
+        font-weight: var(--font-500);
     }
     .column-1 h3,.column-2 a,.column-3 a,.column-4 p{
         font-size: 14px;
