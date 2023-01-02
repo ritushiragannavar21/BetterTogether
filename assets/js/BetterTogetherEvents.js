@@ -1,10 +1,12 @@
- 
- window.addEventListener('mouseup',function(event){
+
+
+ window.addEventListener('mousehover',function(event){
     var box=document.getElementById('checkboxes');
     if(event.target !=box && event.target.parentNode !=box){
         box.style.display="none";
     }
 });
+
 
 var expanded=false;
     function showList(){
